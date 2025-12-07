@@ -1,0 +1,3 @@
+NPM means Node package manager, it is a tool that comes with node js. It is  a store where you dolwnload tool and libraries for javascript project. It install packages, updates packages, remove Packages and manages Project dependencies. 
+Package Json tells node and NPM everything about the project. The project name and version, all libraries that were installed, scripts for running and building the project, etc. It tells NPM what it needs to install. 
+Vite is a modern tool used to build and run frontend projects like react. It is an extremely fast deployment server, it provides almost instant page refresh  while coding.Vite helps to start the react app locally, it optimizes code for production and manages modules and dependencies efficiently.

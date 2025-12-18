@@ -1,0 +1,246 @@
+.heroWrapper {
+  background: linear-gradient(
+    135deg, 
+    #eec8c8 0%,  
+    #ffffff 50%,
+    #aef1df 100%
+  );
+
+  padding: var(--section-padding);
+  min-height: 50vh; 
+  width: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.heroWrapper::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -100px;
+  background: rgba(44, 201, 161, 0.1); /* Low opacity Teal */
+  filter: blur(100px); /* This creates the "glow" effect */
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+.subtitle {
+  background: rgba(47, 199, 161, 0.15);
+  width: 197.91px;
+  height: 40px;
+  border-radius: 5px;
+  color: var(--color-teal);
+  font: 'Sora', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0%;
+  margin: 16px 8px 16px 8px;
+  padding-top: 8px;
+  border: 16px;
+}
+
+.title {
+  font-size: 56px;
+  line-height: 1.1;
+  color: var(--color-navy);
+  font-weight: 800;
+  margin-bottom: 24px;
+  width: 648px;
+  height: 216px;
+  font: 'Epilogue',system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 60px;
+  justify-content: center;
+  color:rgba(23, 37, 78, 1);
+}
+.description{
+  font-size: 20px;
+  font-weight: 400px;
+  font: 'Sora', ystem-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  padding-top: 0;
+}
+
+/* .highlight {
+  color: var(--color-teal);
+} */
+
+.searchBar {
+  display: flex;
+  background: white;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  max-width: 450px;
+  margin-top: 40px;
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  padding: 12px 24px;
+  outline: none;
+  font-size: 16px;
+  background: none;
+}
+
+.searchBtn {
+  background: var(--color-teal);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.visuals {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+
+.imageCircleMain {
+  /* width: 400px;
+  height: 500px; */
+  width: 237px;
+  height: 429px;
+  border-radius: 200px; /* Capsule shape from your design */
+  overflow: hidden;
+  /* border: 10px solid white; */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  position: relative;
+  margin-top: 200px;
+}
+.orangeFrame{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.heroGirl {
+  position: absolute;
+  top: 0;
+  left: 15px; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 200px;
+  z-index: 2;
+}
+
+.imageCircleMain img {
+  width: 237px;
+  height: 429px;
+  object-fit: cover;
+}
+.imageCircleBoy {
+  width: 327px;
+  height: 592px;
+  border-radius: 200px;
+  overflow: hidden;
+  margin-left: 25px;
+  margin-bottom: 0;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  position: relative;
+}
+.orangeFrameBoy{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.heroBoy{
+  position: absolute;
+  top: 0;
+  left: 15px; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 200px;
+  z-index: 2;
+}
+.badge {
+  position: absolute;
+  /* background: white; */
+  padding: 12px 20px;
+  /* border-radius: 50px 50px 50px 0px; Playful asymmetric corners */
+  /* box-shadow: 0 10px 25px rgba(0,0,0,0.08); */
+  display: flex;
+  align-items: center;
+  /* gap: 12px; */
+  z-index: 4;
+  /* width: 10px;
+  height: 10px; */
+}
+
+/* 2k+ Students Badge Position */
+.badgeTop {
+  top: 10px;
+  left: 100px;
+  z-index: 10;
+}
+
+/* 5.8k Courses Badge Position */
+.badgeBottom {
+  position: absolute;
+  bottom: 10px;
+  right: -100px;
+  
+  /* border-radius: 0px 50px 50px 50px; Mirror the asymmetric corner */
+}
+
+.badgeTop img{
+  height: 200px;
+  width: 200px;
+  object-fit: contain; 
+}
+
+.badgeBottom img {
+  height: 300px;
+  width: 200px;
+  object-fit: contain; 
+}
+
+/* .floatingBadge {
+  position: absolute;
+  bottom: 40px;
+  left: -20px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+}
+
+.badgeCount {
+  font-weight: 800;
+  color: var(--color-navy);
+  font-size: 18px;
+}
+
+.badgeText {
+  font-size: 12px;
+  color: #888;
+} */

@@ -1,0 +1,30 @@
+:root {
+  /* Colors from your image */
+  --color-teal: rgba(47, 199, 161, 1);
+
+;
+  --color-coral: #ff6b58;
+  --color-navy: #0b2132;
+  --color-bg-light: #f8fbfb;
+  --color-text-main: #4a4a4a;
+  
+  /* Typography */
+  --font-family: 'Inter', system-ui, sans-serif;
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --section-padding: 80px 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: white;
+  color: var(--color-text-main);
+  line-height: 1.5;
+}

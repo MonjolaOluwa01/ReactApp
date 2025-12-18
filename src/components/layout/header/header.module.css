@@ -1,0 +1,98 @@
+.header {
+  width: 100%;
+  height: 69px;
+  display: flex;
+  border-bottom: 20px;
+  align-items: center;
+  background-color: white;
+  position: absolute; /* Sits on top of the Hero gradient */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-navy);
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 35px; /* Spacing between menu items */
+}
+
+.navList a {
+  text-decoration: none;
+  color: var(--color-navy);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navList a:hover, .active {
+  color: var(--color-teal) !important;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search{
+    height: 20px;
+}
+.contact{
+     height: 20px;
+     margin-left: 20px;
+     padding-top: 5px;
+}
+
+.loginBtn {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: var(--color-navy);
+  cursor: pointer;
+}
+
+.joinBtn {
+  background-color: var(--color-teal);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(44, 201, 161, 0.3);
+  transition: transform 0.2s ease;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.joinBtn:hover {
+  transform: translateY(-2px);
+}

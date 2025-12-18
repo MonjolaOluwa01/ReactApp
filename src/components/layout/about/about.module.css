@@ -1,0 +1,105 @@
+.aboutSection {
+  padding: 120px 0;
+  background-color: white;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.subtitle {
+  color: var(--color-teal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.2;
+  color: var(--color-navy);
+  margin: 20px 0;
+}
+
+.highlight {
+  color: var(--color-coral);
+}
+
+.description {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.featureList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns of features */
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-navy);
+  font-weight: 500;
+}
+
+.icon {
+  color: var(--color-teal);
+}
+
+.btn {
+  background-color: var(--color-teal);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* --- Image Stack Logic --- */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 80%;
+  z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+studentSingle{
+    object-fit: contain;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offsetFrame {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+  background-color: var(--color-coral);
+  border-radius: 20px;
+  z-index: 1;
+}

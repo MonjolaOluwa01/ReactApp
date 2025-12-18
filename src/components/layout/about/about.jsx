@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './About.module.css';
+import styles from './about.module.css';
 import aboutImg from '../../../assets/images/singleStudent.png';
 // import { CheckCircle2 } from 'lucide-react'; // Using lucide for icons
 
